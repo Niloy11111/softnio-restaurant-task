@@ -8,8 +8,8 @@ This project is a converted HTML version of the original design, developed using
 
 ## Technologies Used
 
-- **React**
-- **Tailwind CSS**
+- **React** (Library)
+- **Tailwind CSS** (CSS Framework)
 
 ## Additional Information
 
