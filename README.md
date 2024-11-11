@@ -4,7 +4,7 @@ This project is a converted HTML version of the original design, developed using
 
 ## Project Live Link
 
-[Click here to see project live link](https://softnio.netlify.app/)
+[https://softnio.netlify.app/](https://softnio.netlify.app/)
 
 ## Technologies Used
 
