@@ -7,8 +7,6 @@ import sortimg from "/assets/sort.png";
 
 import "react-datepicker/dist/react-datepicker.css";
 
-// CSS Modules, react-datepicker-cssmodules.css
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import { useState } from "react";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 import "react-datepicker/dist/react-datepicker.css";
@@ -61,8 +59,9 @@ const Booking = () => {
             <SharedHeaderTitle heading="Book Your Table" title="Book Now" />
 
             <p className="font-Roboto">
-              Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
-              leo molestie vel, ornare non id blandit netus.
+              Join us for a unique dining experience with dishes crafted to
+              perfection. Relax and enjoy flavors that make every moment
+              special.
             </p>
           </div>
 

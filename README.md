@@ -1,8 +1,18 @@
-# React + Vite
+## Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a converted HTML version of the original design, developed using React and Tailwind CSS for a responsive and modern interface.
 
-Currently, two official plugins are available:
+## Project Live Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Click here to see project live link](https://softnio.netlify.app/)
+
+## Technologies Used
+
+- **React**
+- **Tailwind CSS**
+
+## Additional Information
+
+The form is functional, storing booking data into localStorage.
+
+---

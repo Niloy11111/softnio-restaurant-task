@@ -8,6 +8,8 @@
 .navLinkContainer li span {
   color: white;
   font-family: Raleway;
+  font-size: 15px;
+  font-weight: 500;
 }
 .progress-bar {
   border-radius: 50%;
