@@ -11,7 +11,7 @@ import { useState } from "react";
 import "react-datepicker/dist/react-datepicker-cssmodules.css";
 import "react-datepicker/dist/react-datepicker.css";
 const Booking = () => {
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState(null);
   const handleBookTable = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -85,8 +85,9 @@ const Booking = () => {
             <div className="flex-col lg:addFlexItems gap-8">
               <div className="w-full relative">
                 <DatePicker
-                  selected={startDate}
+                  selected={startDate || null}
                   onChange={(date) => setStartDate(date)}
+                  placeholderText="Reservation Date"
                   className="w-[330px] lg:w-[302px] py-2 border border-[#E5E7EB] outline-none pl-3 bg-transparent  mb-5 "
                   placeholder="Reservation Date"
                   name="date"
