@@ -2,11 +2,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const SharedHeaderTitle = ({ title, heading, handleNext, handlePrev }) => {
   return (
-    <div className="addFlexBetween">
+    <div className="flex-between h-[110px] ">
       <div>
-        <div className="addFlexItems gap-2 mb-3 lg:mb-4">
+        <div className="flex-items gap-[10px] mb-4 lg:mb-4">
           <p className="bg-p2 #BD1F17 w-[10px] h-[10px]"></p>
-          <p className="text-p2 font-Roboto lg:text-xl font-bold">{title}</p>
+          <p className="text-p2 font-Roboto lg:text-xl leading-[32px] font-bold">
+            {title}
+          </p>
         </div>
         <h3
           className={`${
@@ -21,7 +23,7 @@ const SharedHeaderTitle = ({ title, heading, handleNext, handlePrev }) => {
         className={`${
           heading === "Book Your Table"
             ? "hidden"
-            : "smHidden  lg:addFlexItems gap-3 "
+            : "smHidden  lg:flex-items gap-8 "
         } `}
       >
         <button onClick={handlePrev} className="btnCarousel">

@@ -13,6 +13,8 @@ function App() {
       <Favicon url="https://i.ibb.co.com/c13TN3s/restaurant-1.png" />
       <Header />
       <About />
+      {/* <Offer /> */}
+
       <Popular />
       <Booking />
       <Testimonials />

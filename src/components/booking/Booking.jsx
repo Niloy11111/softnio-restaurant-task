@@ -50,15 +50,15 @@ const Booking = () => {
   };
   return (
     <section
-      className="text-white h-[722px] lg:h-[788px] 
-    bg-[url('/assets/booking.jpg')] bg-no-repeat bg-cover"
+      className="text-white  pt-[120px] pb-[86px] 
+    bg-[url('/assets/booking.jpg')] bg-no-repeat bg-cover "
     >
-      <div className=" customWidth addFlexItems h-full">
-        <div className="w-[635px]">
+      <div className=" customWidth  flex-items h-full">
+        <div className="w-[635px] ">
           <div className="space-y-3 mb-6">
             <SharedHeaderTitle heading="Book Your Table" title="Book Now" />
 
-            <p className="font-Roboto">
+            <p className="font-Roboto ">
               Join us for a unique dining experience with dishes crafted to
               perfection. Relax and enjoy flavors that make every moment
               special.
@@ -66,11 +66,11 @@ const Booking = () => {
           </div>
 
           <form onSubmit={handleBookTable}>
-            <div className=" flex-col lg:addFlexItems gap-8">
+            <div className=" flex-col lg:flex-items gap-8">
               <input
                 type="text"
                 placeholder="Your Name*"
-                className="textInput"
+                className="textInput "
                 name="userName"
                 required
               />
@@ -82,13 +82,14 @@ const Booking = () => {
                 required
               />
             </div>
-            <div className="flex-col lg:addFlexItems gap-8">
+            <div className="flex-col lg:flex-items gap-8">
               <div className="w-full relative">
                 <DatePicker
                   selected={startDate || null}
                   onChange={(date) => setStartDate(date)}
                   placeholderText="Reservation Date"
-                  className="w-[330px] lg:w-[302px] py-2 border border-[#E5E7EB] outline-none pl-3 bg-transparent  mb-5 "
+                  className="textInput w-[330px] lg:w-[302px] py-2 
+                  bg-white/10 outline-none pl-3  mb-5 "
                   placeholder="Reservation Date"
                   name="date"
                   required

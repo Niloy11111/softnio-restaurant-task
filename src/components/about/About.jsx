@@ -16,9 +16,9 @@ const About = () => {
   return (
     <>
       <section className="relative overflow-hidden">
-        <section className=" customWidth lg:pb-0 pb-10 lg:h-[864px] addFlexItems">
+        <section className=" customWidth lg:pb-0 pb-10 lg:h-[864px] flex-items">
           <div>
-            <div className="flex flex-col lg:flex-row gap-10 mt-10 lg:mt-7">
+            <div className="flex flex-col lg:flex-row gap-[79px] mt-10 lg:mt-7">
               <div className="flex-1 relative">
                 <img
                   className="w-[330px] h-[246px] lg:w-[617px] lg:h-[460px]"
@@ -43,7 +43,7 @@ const About = () => {
               </div>
 
               <div className="flex-1 ">
-                <div className="border-b border-p1 addFlexItems gap-3 font-Inter text-sm mb-7">
+                <div className="border-b border-p1 flex-items gap-3 font-Inter text-sm mb-8 ">
                   {tabs.map((tab, index) => (
                     <button
                       key={index}
@@ -58,13 +58,17 @@ const About = () => {
                   ))}
                 </div>
                 {filteredSection?.map((item) => (
-                  <div key={item?.id} className="space-y-5 lg:space-y-7">
-                    <h1 className="regularTitle text-t2">{item?.title}</h1>
-                    <p className="text-d1 font-Roboto">{item?.description}</p>
-                    <div className="addFlexItems gap-5">
+                  <div key={item?.id} className=" lg:space-y-7">
+                    <h1 className="regularTitle mb-[18px] text-t2">
+                      {item?.title}
+                    </h1>
+                    <p className="text-d1 h-[104px] mb-8 font-Roboto">
+                      {item?.description}
+                    </p>
+                    <div className="flex-items gap-5">
                       <Button py="3" title="ABout more" />
 
-                      <div className="addFlexItems gap-2">
+                      <div className="flex-items gap-2">
                         <img
                           className="w-[20px] lg:w-[24px] h-[20px] lg:h-[24px]"
                           src={phone}
@@ -82,7 +86,7 @@ const About = () => {
 
             <div className="mt-14 grid lg:grid-cols-3 gap-10">
               {options?.map(({ id, image, title, subtitle }) => (
-                <div key={id} className="addFlexItems gap-5 ">
+                <div key={id} className="flex-items gap-5 ">
                   <div className="w-[90px] h-[90px] rounded-full addFlex shadow-2xl">
                     <img src={image} alt="" />
                   </div>
@@ -100,7 +104,11 @@ const About = () => {
         </section>
 
         <div className="smHidden absolute top-[50%] right-[-245px]">
-          <img className="w-[363px] h-[340px]" src={aboutRight} alt="" />
+          <img
+            className="w-[363px] -rotate-[22.18deg] h-[340px]"
+            src={aboutRight}
+            alt=""
+          />
         </div>
       </section>
     </>

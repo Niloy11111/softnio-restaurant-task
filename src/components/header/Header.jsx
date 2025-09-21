@@ -1,37 +1,38 @@
-import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import Button from "../shared/button/Button";
 import logo from "/assets/Logo.png";
-import banner from "/assets/banner.jpg";
+import banner from "/assets/banner.png";
 import vector from "/assets/vector.png";
 
 const Header = () => {
-  const [scroll, setScroll] = useState(false);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 10);
-    });
-  }, []);
+  // const [scroll, setScroll] = useState(false);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     setScroll(window.scrollY > 10);
+  //   });
+  // }, []);
   return (
     <>
-      <header className={`h-[792px]  lg:h-[1047px] headerGredient`}>
-        <div className={`h-full  pt-8 `}>
+      {/* h-[792px]  lg:h-screen */}
+      <header className={` headerGredient`}>
+        <div className={`  `}>
           <nav
-            className={` 
-               ${
-                 scroll
-                   ? "sticky z-30  text-black addFlexItems h-[100px] w-full"
-                   : "h-0"
-               }`}
+            className=" h-[108px] flex-items"
+            // className={`
+            //    ${
+            //      scroll
+            //        ? "sticky z-30  text-black flex-items h-[100px] w-full"
+            //        : "h-0"
+            //    }`}
           >
-            <div className="addFlexBetween customWidth ">
-              <div className="addFlexItems gap-[60px]">
+            <div className="flex-between customWidth ">
+              <div className="flex-items gap-[60px]">
                 <div className="">
                   <img src={logo} alt="logo" />
                 </div>
 
                 <div className="smHidden">
-                  <ul className="navLinkContainer addFlexItems gap-10">
+                  <ul className="navLinkContainer flex-items gap-10">
                     <li>
                       <span>Home</span>
                     </li>
@@ -64,17 +65,25 @@ const Header = () => {
             </div>
           </nav>
 
-          <div className="customWidth lgRow addFlexBetween  h-[95%] ">
-            <div className="lg:w-[550px] lg:mt-0 mt-20">
-              <h2 className=" bannerTitle lg:bg-gradient-to-r from-[#BD1F1700] to-[#BD1F17B2] relative lg:w-[830px] z-20">
-                Taste the authentic Saudi cuisine
-              </h2>
-              <p className="font-Roboto text-xl lg:text-2xl text-white mb-7 lg:mb-10">
+          <div className="h-[939px]  customWidth lgRow flex-between  ">
+            <div className="lg:w-[530px]   lg:mt-0 mt-20">
+              <div
+                className="
+              relative lg:w-[830px] h-[272px] lg:bg-gradient-to-r from-[#BD1F1700] to-[#BD1F17B2]  z-20 flex items-center"
+              >
+                <h2 className=" bannerTitle ">
+                  Taste the authentic Saudi cuisine
+                </h2>
+              </div>
+              <p
+                className="mt-4 font-Roboto text-xl lg:text-2xl
+               text-white mb-7 lg:mb-[38px]"
+              >
                 Among the best Saudi chefs in the world, serving{" "}
                 <br className="smHidden" /> you something beyond flavor.{" "}
               </p>
 
-              <Button title="Explore more" />
+              <Button title="Explore Menu" />
             </div>
             <div className="relative ">
               <img
@@ -83,12 +92,12 @@ const Header = () => {
                 alt=""
               />
 
-              <div className="absolute   -top-5 lg:-top-9 right-0 lg:right-[-30px] ">
-                <img src={vector} alt="" />
+              <div className="absolute   -top-5 lg:-top-8 right-0 lg:right-[-28px] ">
+                <img className="w-[45px] h-[45px]" src={vector} alt="" />
               </div>
 
               <div
-                className="z-20 smHidden absolute bottom-[1px]  right-[-50px]
+                className="z-20 smHidden absolute bottom-[1px]  right-[-55px]
               bg-b1  w-[120px]  h-[120px] rounded-full"
               >
                 <svg width="120" height="120">

@@ -5,6 +5,7 @@ import CarouselButton from "../shared/headertitle/CarouselButton";
 import SharedHeaderTitle from "../shared/headertitle/SharedHeaderTitle";
 import Group from "/assets/Group.png";
 import left from "/assets/left.png";
+import Qoute from "/assets/qoute.png";
 import right from "/assets/right.png";
 const Testimonials = () => {
   const [currentId, setCurrentId] = useState(1);
@@ -31,9 +32,9 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="z-0 relative overflow-hidden h-[861px] lg:h-[965px]  addFlexItems">
+    <section className="z-0 relative overflow-hidden my-[120px]  flex-items">
       <div className="w-full z-30 customWidth">
-        <div className="mb-10">
+        <div className="mb-[60px]">
           <SharedHeaderTitle
             handleNext={handleNext}
             handlePrev={handlePrev}
@@ -43,20 +44,23 @@ const Testimonials = () => {
         </div>
         <div className="lg:h-[555px] flex flex-col-reverse lg:flex-row w-full">
           <div className="relative lg:flex-1 bg-y1 h-[335px] lg:h-full addFlex ">
-            <div className="h-[285px] lg:h-[411px] w-[280px] lg:w-[386px] addFlexBetween flex-col">
+            <div className="relative h-[285px] pt-5 pl-[26px] pb-[18px]   lg:h-[411px] w-[280px] lg:w-[386px] flex-between flex-col">
+              <div className="absolute left-0 top-0">
+                <img className="w-[28px] h-[29px]" src={Qoute} alt="" />
+              </div>
               <div>
                 <p className="subTitle ">{review}</p>
               </div>
 
-              <div className="relative border-b  border-t1 pb-4  addFlexBetween w-full">
-                <div>
-                  <h3 className="text-t1 font-Bebas font-lg font-medium">
+              <div className="border-b h-[37px] border-t1 pb-[17.5px]  flex-between w-full">
+                <div className="">
+                  <h3 className="text-t1 font-Bebas text-lg font-medium">
                     {name}
                   </h3>
                   <p className="font-Roboto text-sm">{address}</p>
                 </div>
 
-                <div className="border-b-4 right-0 -top-0.5 border-[#BD1F17] absolute pb-5">
+                <div className="border-b-4  border-[#BD1F17] pb-3.5">
                   <img
                     className="w-[39px] h-[39px] rounded-full"
                     src={image}

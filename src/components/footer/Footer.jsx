@@ -2,21 +2,20 @@ import { links, storeDetails } from "../../../public/data";
 
 const Footer = () => {
   return (
-    <section className="addFlexItems bg-blend-overlay bg-[#000000CC]  h-[999px] lg:h-[719px] bg-center  bg-cover  bg-no-repeat bg-[url('/assets/footer.jpg')]">
-      <div className="customWidth h-[939px] lg:h-[479px] addFlexBetween flex-col">
-        <div className="h-[808px] lg:h-[256px] addFlexBetween flex-col">
-          <h3 className="regularTitle text-white text-center ">
+    <section className=" flex items-center bg-blend-overlay bg-[#000000CC]  h-[999px] lg:h-[719px] bg-center   bg-cover  bg-no-repeat bg-[url('/assets/footer.jpg')]">
+      {/* flex-between flex-col */}
+      <div className="customWidth h-[939px] lg:h-[479px]   ">
+        {/* flex-between flex-col */}
+        <div className="h-[808px] lg:h-[256px] mb-[120px] ">
+          <h3 className="regularTitle mb-[48px] text-white text-center ">
             We ready to have you the best dining experiences
           </h3>
           <div className="grid lg:grid-cols-4 gap-6  ">
             {storeDetails.map(({ id, title, icon, subOne, subTwo }) => (
-              <div
-                key={id}
-                className="h-[136px] lg:h-[144px] addFlexBetween flex-col"
-              >
-                <img className="mx-auto" src={icon} alt="" />
-                <h4 className="cardTitle text-white">{title}</h4>
-                <div>
+              <div key={id} className="h-[136px] lg:h-[144px] w-[312px] ">
+                <img className="mx-auto mb-6" src={icon} alt="" />
+                <h4 className="cardTitle  mb-3 text-white">{title}</h4>
+                <div className="h-[50px] flex-between flex-col">
                   <p className="subTitleCard text-[#F7F8F9] ">{subOne}</p>
                   <p className="subTitleCard text-[#F7F8F9] ">{subTwo}</p>
                 </div>
@@ -24,8 +23,8 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="  addFlexBetween flex-col h-[71px] lg:h-[103px]">
-          <div className="addFlexBetween w-[192px] lg:w-[285px]">
+        <div className="  flex-between flex-col mx-auto lg:h-[103px] lg:w-[285px]">
+          <div className="flex-between  gap-6">
             {links.map((link, index) => (
               <div
                 key={index}

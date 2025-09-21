@@ -2,7 +2,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const CarouselButton = ({ handlePrev, handleNext }) => {
   return (
-    <div className="addFlexItems gap-3">
+    <div className="flex-items gap-3">
       <button onClick={handlePrev} className="btnCarousel">
         {" "}
         <IoIosArrowBack className="text-2xl text-t1" />{" "}

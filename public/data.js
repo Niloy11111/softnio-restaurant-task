@@ -86,30 +86,30 @@ export const cards = [
     title: "CUISINE CHICKEN",
     subtitle: "Japanese Cuisine Chicken",
   },
-  {
-    id: 5,
-    image: burger,
-    title: "VEGETABLES BURGER",
-    subtitle: "Barbecue Italian cuisine pizza",
-  },
-  {
-    id: 6,
-    image: pizza,
-    title: "SPECIAL PIZZA",
-    subtitle: "Barbecue Italian cuisine pizza",
-  },
-  {
-    id: 7,
-    image: fries,
-    title: "SPECIAL FRENCH FRIES",
-    subtitle: "Barbecue Italian cuisine",
-  },
-  {
-    id: 8,
-    image: chicken,
-    title: "CUISINE CHICKEN",
-    subtitle: "Japanese Cuisine Chicken",
-  },
+  // {
+  //   id: 5,
+  //   image: burger,
+  //   title: "VEGETABLES BURGER",
+  //   subtitle: "Barbecue Italian cuisine pizza",
+  // },
+  // {
+  //   id: 6,
+  //   image: pizza,
+  //   title: "SPECIAL PIZZA",
+  //   subtitle: "Barbecue Italian cuisine pizza",
+  // },
+  // {
+  //   id: 7,
+  //   image: fries,
+  //   title: "SPECIAL FRENCH FRIES",
+  //   subtitle: "Barbecue Italian cuisine",
+  // },
+  // {
+  //   id: 8,
+  //   image: chicken,
+  //   title: "CUISINE CHICKEN",
+  //   subtitle: "Japanese Cuisine Chicken",
+  // },
 ];
 
 export const testimonials = [
